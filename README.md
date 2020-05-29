@@ -1,2 +1,3 @@
-# solutions_calculus_vol_1_second_edition_tom_apostol
-Solutions from the book Calculus, Volume 1: One-variable calculus, with an introduction to linear algebra (Second Edition 1988) by Tom Mike Apostol
+# Solutions Calculus Vol 1 Second edition
+
+Solutions from the book _**Calculus, Volume 1: One-variable calculus, with an introduction to linear algebra Second edition (1988)**_ by Tom Mike Apostol
