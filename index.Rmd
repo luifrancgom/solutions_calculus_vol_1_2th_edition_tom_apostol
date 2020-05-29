@@ -1,7 +1,7 @@
 ---
 title: "Solutions Calculus Vol 1 2th Edition"
 author: ["Luis Francisco Gomez Lopez"] 
-date: "`r Sys.time()`"
+date: "`r format(Sys.time(), '%Y-%m-%d %H:%M:%S %Z')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
