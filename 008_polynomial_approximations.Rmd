@@ -1,0 +1,13 @@
+# Polynomial Approximations to Functions
+
+## Exercises 7.4 {#exr7.4}
+
+## Exercises 7.8 {#exr7.8}
+
+## Exercises 7.11 {#exr7.11}
+
+## Exercises 7.13 {#exr7.13}
+
+## Exercises 7.17 {#exr7.17}
+
+

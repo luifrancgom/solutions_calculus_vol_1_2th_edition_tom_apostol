@@ -1,5 +1,25 @@
-# Introduction {#intro}
+# Introduction
 
-## Historical Introduction {#hist_intro}
+## Historical Introduction
 
 ### Exercises I 1.4 {#exrI1.4}
+
+## Some Basic Concepts of the Theory of Sets
+
+### Exercises I 2.5 {#exrI2.5}
+
+## A Set of Axioms for the Real-Number System
+
+### Exercises I 3.3 {#exrI3.3}
+
+### Exercises I 3.5 {#exrI3.5}
+
+### Exercises I 3.12 {#exrI3.12}
+
+## Mathematical Induction, Summation Notation, and Related Topics
+
+### Exercises I 4.4 {#exrI4.4}
+
+### Exercises I 4.9 {#exrI4.9}
+
+

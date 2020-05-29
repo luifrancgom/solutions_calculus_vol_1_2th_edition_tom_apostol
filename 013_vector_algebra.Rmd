@@ -1,0 +1,11 @@
+# Vector Algebra
+
+## Exercises 12.4 {#exr12.4}
+
+## Exercises 12.8 {#exr12.8}
+
+## Exercises 12.11 {#exr12.11}
+
+## Exercises 12.15 {#exr12.15}
+
+## Exercises 12.17 {#exr12.17}

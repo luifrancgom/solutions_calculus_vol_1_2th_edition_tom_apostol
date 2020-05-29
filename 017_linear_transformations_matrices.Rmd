@@ -1,0 +1,13 @@
+# Linear Transformations and Matrices
+
+## Exercises 16.4 {#exr16.4}
+
+## Exercises 16.8 {#exr16.8}
+
+## Exercises 16.12 {#exr16.12}
+
+## Exercises 16.16 {#exr16.16}
+
+## Exercises 16.20 {#exr16.20}
+
+
