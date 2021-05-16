@@ -1,6 +1,6 @@
 ---
 title: "Solutions Calculus Vol 1 2th Edition"
-author: ["Luis Francisco Gomez Lopez"] 
+author: "Anonymous"
 date: "`r format(Sys.time(), '%Y-%m-%d %H:%M:%S %Z')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -8,6 +8,7 @@ documentclass: book
 bibliography: [solutions_calculus_vol_1_2th_edition_tom_apostol.bib]
 biblio-style: apalike
 link-citations: yes
+github-repo:  luifrancgom/solutions_calculus_vol_1_2th_edition_tom_apostol 
 description: "Solutions from the book Calculus, Volume 1: One-variable calculus, with an introduction to linear algebra Second Edition (1988) by Tom Mike Apostol."
 ---
 

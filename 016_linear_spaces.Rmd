@@ -1,4 +1,4 @@
-# Linear Transformation and Matrices
+# Linear Spaces
 
 ## Exercises 15.5 {#exr15.5}
 

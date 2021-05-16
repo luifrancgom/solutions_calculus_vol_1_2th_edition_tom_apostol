@@ -1,4 +1,4 @@
-# Linear Transformations and Matrices
+# Linear Transformation and Matrices
 
 ## Exercises 16.4 {#exr16.4}
 
