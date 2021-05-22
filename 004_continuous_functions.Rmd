@@ -1,14 +1,14 @@
 # Continuous Functions
 
-## Exercises 3.6 {#exr3.6}
+## Exercises 3.6 {#exrIV3.6}
 
-## Exercises 3.8 {#exr3.8}
+## Exercises 3.8 {#exrIV3.8}
 
-## Exercises 3.11 {#exr3.11}
+## Exercises 3.11 {#exrIV3.11}
 
-## Exercises 3.15 {#exr3.15}
+## Exercises 3.15 {#exrIV3.15}
 
-## Exercises 3.20 {#exr3.20}
+## Exercises 3.20 {#exrIV3.20}
 
 
 

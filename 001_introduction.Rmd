@@ -8,7 +8,7 @@ library(patchwork)
 
 ## Historical Introduction
 
-### Exercises I 1.4 {#exrI1.4}
+### Exercises I 1.4 {#exr1.4}
 
 **1.a** Modify the region in Figure I.3 by assuming that the ordinate at each $x$ is $2x^2$ instead of $x^2$. Draw the new figure. Check through the principal steps in the foregoing section and find what effect this has on the calculation of the area.
 
@@ -433,7 +433,7 @@ Fourth we use the following inequality where $n \geq 1$
 
 $$\begin{split}
   1^{\mathbf{3}} + 2^{\mathbf{3}} + \cdots + (n-1)^{\mathbf{3}} & < \frac{n^{\mathbf{4}}}{{\mathbf{4}}} < 1^{\mathbf{3}} + 2^{\mathbf{3}} + \cdots + n^{\mathbf{3}} \\
-  a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n-1} k^{\mathbf{3}} + cb < a\frac{b^{\mathbf{4}}}{{\mathbf{4}}} + cb & < a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n} k^{\mathbf{3}} + cb \\
+  a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n-1} k^{\mathbf{3}} + cb & < a\frac{b^{\mathbf{4}}}{{\mathbf{4}}} + cb < a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n} k^{\mathbf{3}} + cb \\
   a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n-1} k^{\mathbf{3}} + c\frac{b(n-1)}{n} & < a\frac{b^{\mathbf{4}}}{{\mathbf{4}}} + cb < a\frac{b^{\mathbf{4}}}{n^{\mathbf{4}}} \sum_{k=1}^{n} k^{\mathbf{3}} + cb \\
   s_n & < a\frac{b^{\mathbf{4}}}{{\mathbf{4}}} + cb < S_n
   \end{split}$$
@@ -458,7 +458,136 @@ We can generalize this result to $ax^{\mathbf{m}} + c$ where the process is simi
 
 **1** Use the roster notation to designate the following sets of real numbers.
 
-$$A = \{x | x^2 - 1 = 0 \} = \{-1, 1 \}$$
+$$A = \{x | x^2 - 1 = 0 \} = \{ -1, 1 \}$$
+
+$$B = \{x | (x - 1)^2 = 0 \} = \{ 1 \}$$
+
+$$C = \{x | x + 8 = 9 \} = \{ 1 \}$$
+
+In this part $x^3 - 2x^2 + x = 2 \Longleftrightarrow (x^2 + 1)(x - 2) = 0$. In that sense there are also 2 complex roots $x = -i$ and $x = i$ but they are not real numbers
+
+$$D = \{x | x^3 - 2x^2 + x = 2 \} = \{ 2 \}$$
+
+$$E = \{x | (x + 8)^2 = 9^2 \} = \{ -17, 1 \}$$
+
+$$F = \{x | (x^2 + 16x)^2 = 17^2 \} = \{ -17, -8 - \sqrt{47}, 1, \sqrt{47} - 8 \}$$
+
+**2** For the sets in Exercise 1, note that $B \subseteq A$. List all the inclusion relations $\subseteq$ that hold among the sets $A$, $B$, $C$, $D$, $E$, $F$. 
+
+$B \subseteq A$, $C \subseteq A$, $C \subseteq B$, $B \subseteq C$, $E \subseteq B$, $E \subseteq C$, $E \subseteq F$ 
+
+**3** Let $A = \{ 1 \}$, $B = \{ 1, 2 \}$. Discuss the validity of the following statements (prove the ones that are true and explain why the others are not true).
+
+**3a** $A \subset B$
+
+It is true because $1 \in A$ and $1 \in B$ but $2 \notin A$ and $2 \in B$ so $A \subseteq B$ and $A \neq B$
+
+**3b** $A \subseteq B$
+
+It is true because $1 \in A$ and $1 \in B$ but $2 \notin A$ and $2 \in B$ so $A \subset B$ or $A = B$ is true
+
+**3c** $A \in B$
+
+It is false because ${1}$ is not an element of $B$. Remember that $1$ is not the same as $\{ 1 \}$
+
+**3d** $1 \in A$
+
+It is true because $1$ is an element of $A$. 
+
+**3e** $1 \subseteq A$
+
+It is false because the subsets of $A$ are $\emptyset$ and $\{ 1 \}$
+
+**3f** $1 \subset B$
+
+It is false because the proper subsets of $B$ are $\emptyset$, $\{ 1 \}$ and $\{ 2 \}$
+
+**4** Solve Exercise 3 if $A = \{ 1 \}$ and $B = \{ \{ 1 \}, 1 \}$. 
+
+**4a** $A \subset B$
+
+It is true because $1 \in A$ and $1 \in B$ but $\{ 1 \} \notin A$ and $\{ 1 \} \in B$ so $A \subseteq B$ and $A \neq B$
+
+**4b** $A \subseteq B$
+
+It is true because $1 \in A$ and $1 \in B$ but $\{ 1 \} \notin A$ and $\{ 1 \} \in B$ so $A \subset B$ or $A = B$ is true
+
+**4c** $A \in B$
+
+It is true because $\{ 1 \} \in B$ and $A = \{ 1 \}$ so $A \in B$ 
+
+**4d** $1 \in A$
+
+It is true because $1$ is an element of $A$. 
+
+**4e** $1 \subseteq A$
+
+It is false because the subsets of $A$ are $\emptyset$ and $\{ 1 \}$
+
+**4f** $1 \subset B$
+
+It is false because the proper subsets of $B$ are $\emptyset$, $\{ \{1 \} \}$ and $\{ 1 \}$
+
+**5** Given the set $S = \{ 1, 2, 3, 4 \}$. Display all subsets of $S$. There are 16 altogether, counting $\emptyset$ and $S$.
+
+$\emptyset$, $\{ 1 \}$, $\{ 2 \}$, $\{ 3 \}$, $\{ 4 \}$, $\{ 1, 2 \}$, $\{ 1, 3 \}$, $\{ 1, 4 \}$, $\{ 2, 3 \}$, $\{ 2, 4 \}$, $\{ 3, 4 \}$, $\{ 1, 2, 3 \}$, $\{ 1, 2, 4 \}$, $\{ 1, 3, 4 \}$, $\{ 2, 3, 4 \}$, $\{ 1, 2, 3, 4 \}$
+
+**6** Given the following four sets 
+
+$$A = \{ 1, 2 \}, \;\; B = \{ \{ 1 \}, \{ 2 \} \}, \;\; C = \{ \{ 1 \}, \{ 1, 2 \} \}, \;\; D = \{ \{ 1 \}, \{ 2 \}, \{ 1, 2 \} \}$$  
+
+discuss the validity of the following statements (prove the ones that are true and explain why the others are not true).
+
+**6a** $A = B$
+
+It is false because $1 \in A$ and $1 \notin B$
+
+**6b** $A \subseteq B$
+
+It is false because $1 \in A$ and $1 \notin B$
+
+**6c** $A \subset C$
+
+It is false because $1 \in A$ and $1 \notin C$
+
+**6d** $A \in C$
+
+It is true because $\{ 1, 2 \} \in C$ and $A = \{ 1, 2 \}$ so $A \in C$ 
+
+**6e** $A \subset D$
+
+It is false because $1 \in A$ and $1 \notin D$
+
+**6f** $B \subset C$
+
+It is false because $\{ 2 \} \in B$ and $\{ 2 \} \notin C$
+
+**6g** $B \subset D$
+
+It is true because $\{ 1 \} \in B$, $\{ 2 \} \in B$ and $\{ 1 \} \in D$, $\{ 2 \} \in D$ but $\{ 1, 2 \} \notin B$ and $\{ 1, 2 \} \in D$
+
+**6h** $B \in D$
+
+It is not true because the elements of $D$ are $\{ 1 \}$, $\{ 2 \}$ and $\{ 1, 2 \}$ so $\{ \{ 1 \}, \{ 2 \} \}$ is not an element of $D$
+
+**6i** $A \in D$
+
+It is true because $\{ 1, 2 \} \in D$ and $A = \{ 1, 2 \}$ so $A \in D$
+
+**7** Prove the following properties of set equality.
+
+**7a** $\{ a, a \} = \{ a \}$
+
+$$\begin{split}
+  a \in \{ a, a \} & \Longleftrightarrow a \in \{ a \}
+  \end{split}$$
+
+**7b** $\{ a, b \} = \{ b, a \}$
+
+$$\begin{split}
+  a \in \{ a, b \} \land b \in \{ a, b \} & \Longleftrightarrow b \in \{ a, b \} \land a \in \{ a, b \} \\
+  & \Longleftrightarrow b \in \{ b, a \} \land a \in \{ b, a \}
+  \end{split}$$
 
 ## A Set of Axioms for the Real-Number System
 

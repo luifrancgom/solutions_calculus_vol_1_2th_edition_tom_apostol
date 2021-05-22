@@ -1,16 +1,16 @@
 # Some Applications of Integration
 
-## Exercises 4.6 {#exr4.6}
+## Exercises 4.6 {#exrV4.6}
 
-## Exercises 4.12 {#exr4.12}
+## Exercises 4.12 {#exrV4.12}
 
-## Exercises 4.15 {#exr4.15}
+## Exercises 4.15 {#exrV4.15}
 
-## Exercises 4.19 {#exr4.19}
+## Exercises 4.19 {#exrV4.19}
 
-## Exercises 4.21 {#exr4.21}
+## Exercises 4.21 {#exrV4.21}
 
-## Exercises 4.23 {#exr4.23}
+## Exercises 4.23 {#exrV4.23}
 
 
 
