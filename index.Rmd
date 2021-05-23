@@ -1,6 +1,6 @@
 ---
 title: "Solutions Calculus Vol 1 2th Edition"
-author: "Anonymous"
+author: "Luis Francisco Gomez Lopez"
 date: "`r format(Sys.time(), '%Y-%m-%d %H:%M:%S %Z')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -13,4 +13,16 @@ description: "Solutions from the book Calculus, Volume 1: One-variable calculus,
 ---
 
 # Preface {-}
+
+The main objective of this book is to present all the solutions of the exercises proposed in [@apostol_calculus_1988]
+
+Currently it is a work in progress
+
+## Acknowledgements {-}
+
+- To my family that supports me
+- To all the taxpayers of Colombia for allowing me to access the benefits of public expending 
+- To the [Business Science](https://www.business-science.io/) and [R4DS Online Learning](https://www.rfordatasci.com/) communities where I learn [R](https://www.r-project.org/about.html)
+- To the [R Core Team](https://www.r-project.org/contributors.html), the creators of [RStudio IDE](https://www.rstudio.com/products/rstudio/) and the authors and maintainers of the packages [`rmarkdown`](https://github.com/rstudio/rmarkdown), [`bookdown`](https://github.com/rstudio/bookdown), [`tidyverse`](https://github.com/tidyverse/tidyverse), [`latex2exp`](https://github.com/stefano-meschiari/latex2exp) and [`patchwork`](https://github.com/thomasp85/patchwork) for allowing me to access these tools without paying for a license
+- To the [Linux kernel community](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [Linux distributions](https://static.lwn.net/Distributions/) as my main OS without paying for a license
 

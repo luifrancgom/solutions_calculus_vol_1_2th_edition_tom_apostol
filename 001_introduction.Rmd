@@ -462,7 +462,7 @@ $$B = \{x | (x - 1)^2 = 0 \} = \{ 1 \}$$
 
 $$C = \{x | x + 8 = 9 \} = \{ 1 \}$$
 
-In this part $x^3 - 2x^2 + x = 2 \Longleftrightarrow (x^2 + 1)(x - 2) = 0$. In that sense there are also 2 complex roots $x = -i$ and $x = i$ but they are not real numbers
+In this part $x^3 - 2x^2 + x = 2 \Longleftrightarrow (x^2 + 1)(x - 2) = 0$. In that sense there are also 2 complex roots $x = -i$ and $x = i$ but they are not real numbers (Remember that $S = \mathbb{R}$)
 
 $$D = \{x | x^3 - 2x^2 + x = 2 \} = \{ 2 \}$$
 
@@ -586,6 +586,243 @@ $$\begin{split}
   a \in \{ a, b \} \land b \in \{ a, b \} & \Longleftrightarrow b \in \{ a, b \} \land a \in \{ a, b \} \\
   & \Longleftrightarrow b \in \{ b, a \} \land a \in \{ b, a \}
   \end{split}$$
+
+**7c** $\{ a \} = \{ b, c \}$ if and only if $a = b = c$
+
+$$\begin{split}
+  \{ a \} = \{ b, c \} & \Longleftrightarrow a \in \{ b, c \} \land (b \in \{ a \} \land c \in \{ a \}) \\
+  & \Longleftrightarrow (a = b \lor a = c) \land (b = a \land c = a) \\
+  & \Longleftrightarrow (a = b \lor a = c) \land (a = b = c) \\
+  & \Longleftrightarrow a = b = c
+  \end{split}$$
+
+Prove the set relations in Exercises 8 through 19. (Sample proofs are given at the end of this section)
+
+**8** *Commutative laws:* $A \cup B = B \cup A$, $A \cap B = B \cap A$
+
+$$\begin{split}
+  x \in A \cup B & \Longleftrightarrow x \in A \lor x \in B \\
+  & \Longleftrightarrow x \in B \lor x \in A \\
+  & \Longleftrightarrow \in B \cup A
+  \end{split}$$
+
+$$\begin{split}
+  x \in A \cap B & \Longleftrightarrow x \in A \land x \in B \\
+  & \Longleftrightarrow x \in B \land x \in A \\
+  & \Longleftrightarrow \in B \cap A
+  \end{split}$$
+
+**9** *Associative laws:* $A \cup (B \cup C) = (A \cup B) \cup C$, $A \cap (B \cap C) = (A \cap B) \cap C$
+
+$$\begin{split}
+  x \in A \cup (B \cup C) & \Longleftrightarrow x \in A \lor x \in (B \cup C) \\
+  & \Longleftrightarrow x \in A \lor (x \in B \lor x \in C) \\
+  & \Longleftrightarrow (x \in A \lor x \in B) \lor x \in C \\
+  & \Longleftrightarrow x \in A \cup B \lor x \in C \\
+  & \Longleftrightarrow x \in (A \cup B) \cup C \\
+  \end{split}$$
+
+$$\begin{split}
+  x \in A \cap (B \cap C) & \Longleftrightarrow x \in A \land x \in (B \cap C) \\
+  & \Longleftrightarrow x \in A \land (x \in B \land x \in C) \\
+  & \Longleftrightarrow (x \in A \land x \in B) \land x \in C \\
+  & \Longleftrightarrow x \in A \cap B \land x \in C \\
+  & \Longleftrightarrow x \in (A \cap B) \cap C \\
+  \end{split}$$
+
+**10** *Distributive laws:* $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+
+$$\begin{split}
+  x \in A \cap (B \cup C) & \Longleftrightarrow x \in A \land x \in (B \cup C) \\
+  & \Longleftrightarrow x \in A \land (x \in B \lor x \in C) \\
+  & \Longleftrightarrow (x \in A \land x \in B) \lor (x \in A \land x \in C) \\
+  & \Longleftrightarrow x \in A \cap B \lor x \in A \cap C \\
+  & \Longleftrightarrow x \in (A \cap B) \cup (A \cap C) \\
+  \end{split}$$
+  
+$$\begin{split}
+  x \in A \cup (B \cap C) & \Longleftrightarrow x \in A \lor x \in (B \cap C) \\
+  & \Longleftrightarrow x \in A \lor (x \in B \land x \in C) \\
+  & \Longleftrightarrow (x \in A \lor x \in B) \land (x \in A \lor x \in C) \\
+  & \Longleftrightarrow x \in A \cup B \land x \in A \cup C \\
+  & \Longleftrightarrow x \in (A \cup B) \cap (A \cup C) \\
+  \end{split}$$
+
+**11** $A \cup A = A$, $A \cap A = A$
+
+$$\begin{split}
+  x \in A \cup A & \Longleftrightarrow x \in A \lor x \in A \\
+  & \Longleftrightarrow x \in A
+  \end{split}$$
+  
+$$\begin{split}
+  x \in A \cap A & \Longleftrightarrow x \in A \land x \in A \\
+  & \Longleftrightarrow x \in A
+  \end{split}$$
+  
+**12** $A \subseteq A \cup B$, $A \cap B \subseteq A$
+ 
+$$\begin{split}
+  x \in A & \Longrightarrow x \in A \lor x \in B \\
+  & \Longrightarrow x \in A \cup B
+  \end{split}$$
+  
+In this part we also have $A \cap B \subseteq B$ but because $A$ and $B$ are arbitrary sets the proof related to $A \cap B \subseteq A$ include this case. 
+  
+$$\begin{split}
+  x \in A \cap B & \Longrightarrow x \in A \land x \in B \\
+  & \Longrightarrow x \in A
+  \end{split}$$
+  
+**13** $A \cup \emptyset = A$, $A \cap \emptyset = \emptyset$
+
+In this part remember that $x \in \emptyset$ is false but $x \in A \lor x \in \emptyset$ is true if and only if $x \in A$  
+
+$$\begin{split}
+  x \in A \cup \emptyset & \Longleftrightarrow x \in A \lor x \in \emptyset \\
+  & \Longleftrightarrow x \in A
+  \end{split}$$
+
+In this part remember that $\emptyset$ is always a subset of every set and that $\emptyset$ is a set containing no elements whatsoever. Taking into account these true statements we can prove that $A \cap \emptyset = \emptyset$.  
+
+First, $A \cap \emptyset \supseteq \emptyset$ is true because $\emptyset$ is always a subset of every set.
+
+Second, if $x \in A \cap \emptyset$ then $x \in A \land x \in \emptyset$ but $x \notin \emptyset$ so $x \in A \cap \emptyset$ is false. Therefore for any $x$ we have that $x \notin A \cap \emptyset$ must be true. Also let's assume that $A \cap \emptyset \nsubseteq \emptyset$ where this would mean that there is some $y$ such that $y \in A \cap \emptyset \land y \notin \emptyset$ but this is false because $A \cap \emptyset$ is a set containing no elements whatsoever. Therefore $A \cap \emptyset \nsubseteq \emptyset$ is false and $A \cap \emptyset \subseteq \emptyset$ must be true.
+
+Third, because $A \cap \emptyset \supseteq \emptyset$ and $A \cap \emptyset \subseteq \emptyset$ are true we have that $A \cap \emptyset = \emptyset$. 
+
+**14** $A \cup (A \cap B) = A$, $A \cap (A \cup B) = A$
+
+First we prove $A \cup (A \cap B) = A$ in 2 parts:
+
+$$\begin{split}
+  x \in A \cup (A \cap B) & \Longleftrightarrow x \in A \lor x \in A \cap B \\
+  & \Longleftrightarrow x \in A \lor (x \in A \land x \in B) \\
+  & \Longleftrightarrow (x \in A \lor x \in A) \land (x \in A \lor x \in B) \\
+  & \Longleftrightarrow x \in A \land x \in (A \cup B) \\
+  & \Longrightarrow x \in A \\
+  x \in A & \Longrightarrow x \in A \lor x \in A \cap B \\
+  & \Longleftrightarrow x \in A \cup (A \cap B)
+  \end{split}$$
+  
+$$\begin{split}
+  x \in A & \Longrightarrow x \in A \lor x \in A \cap B \\
+  & \Longleftrightarrow x \in A \cup (A \cap B)
+  \end{split}$$
+
+Second we prove $A \cap (A \cup B) = A$ using $A \cup (A \cap B) = A$:
+
+$$\begin{split}
+  A \cap (A \cup B) & = (A \cap A) \cup (A \cap B) \\
+  & = A \cup (A \cap B) \\
+  & = A
+  \end{split}$$
+  
+**15** If $A \subseteq C$ and $B \subseteq C$, then $A \cup B \subseteq C$
+
+$$\begin{split}
+  (A \subseteq C \land B \subseteq C) \land x \in A \cup B & \Longleftrightarrow (A \subseteq C \land B \subseteq C) \land (x \in A \lor x \in B) \\
+  & \Longrightarrow (A \subseteq C \land x \in A) \lor (B \subseteq C \land x \in B) \\
+  & \Longrightarrow x \in C
+  \end{split}$$
+
+**16** If $C \subseteq A$ and $C \subseteq B$, then $C \subseteq A \cap B$
+
+$$\begin{split}
+  (C \subseteq A \land C \subseteq B) \land x \in C & \Longrightarrow (C \subseteq A \land x \in C) \land (C \subseteq B \land x \in C) \\
+  & \Longrightarrow x \in A \land x \in B \\
+  & \Longrightarrow x \in A \cap B
+  \end{split}$$
+
+**17a** If $A \subset B$ and $B \subset C$, prove that $A \subset C$
+
+$$\begin{split}
+  (A \subset B \land B \subset C) \land x \in A & \Longrightarrow (x \in B \land B \subset C) \land \exists y: y \notin A \land y \in B \\
+  & \Longrightarrow x \in C \land \exists y: y \notin A \land y \in C
+  \end{split}$$  
+
+**17b** If $A \subseteq B$ and $B \subseteq C$, prove that $A \subseteq C$
+
+$$\begin{split}
+  (A \subseteq B \land B \subseteq C) \land x \in A & \Longrightarrow x \in B \land B \subseteq C \\
+  & \Longrightarrow x \in C
+  \end{split}$$
+
+**17c** What can you conclude if $A \subset B$ and $B \subseteq C$?
+
+First, if $B = C$ we can conclude that $A \subset C$.
+
+Second, if $B \subset C$ using the proof in **17a** we can conclude again that $A \subset C$.
+
+**17d** If $x \in A$ and $A \subseteq B$, is it necessarily true that $x \in B$?
+
+Yes, because $A \subseteq B$ means that $\forall y: y \in A \Longrightarrow y \in B$ and if $x \in A$ is true also $x \in B$ must be true.
+
+**17e** If $x \in A$ and $A \in B$ is it necessarily true that $x \in B$?
+
+No, for example in **6** a counterexample was presented where $A = \{ 1, 2 \}$ and $C = \{ \{ 1\}, \{ 1, 2 \} \}$. In this case we have that $1 \in A$, $A \in C$ and $1 \notin C$.
+
+**18** $A - (B \cap C) = (A - B) \cup (A - C)$
+
+$$\begin{split}
+  x \in A - (B \cap C) & \Longleftrightarrow x \in A \land x \notin B \cap C \\
+  & \Longleftrightarrow x \in A \land (x \notin B \lor x \notin C) \\
+  & \Longleftrightarrow (x \in A \land x \notin B) \lor (x \in A \land x \notin C) \\
+  & \Longleftrightarrow x \in A - B \lor x \in A - C \\
+  & \Longleftrightarrow x \in A - B \cup A - C
+  \end{split}$$
+
+**19** Let $\mathscr{F}$ be a class of sets. Then 
+
+$$B - \bigcup_{A \in \mathscr{F}} A = \bigcap_{A \in \mathscr{F}} (B - A) \text{ and } B - \bigcap_{A \in \mathscr{F}} A = \bigcup_{A \in \mathscr{F}} (B - A)$$
+
+$$\begin{split}
+  x \in B - \bigcup_{A \in \mathscr{F}} A & \Longleftrightarrow x \in B \land x \notin \bigcup_{A \in \mathscr{F}} A \\
+  & \Longleftrightarrow x \in B \land \forall A: A \in \mathscr{F} \land x \notin A \\
+  & \Longleftrightarrow (\forall A: A \in \mathscr{F} \land x \in B) \land (\forall A: A \in \mathscr{F} \land x \notin A) \\
+  & \Longleftrightarrow \forall A: A \in \mathscr{F} \land (x \in B \land x \notin A) \\
+  & \Longleftrightarrow \forall A: A \in \mathscr{F} \land x \in B - A \\
+  & \Longleftrightarrow x \in \bigcap_{A \in \mathscr{F}} B - A
+  \end{split}$$
+
+$$\begin{split}
+  x \in B - \bigcap_{A \in \mathscr{F}} A & \Longleftrightarrow x \in B \land x \notin \bigcap_{A \in \mathscr{F}} A \\
+  & \Longleftrightarrow x \in B \land \exists A: A \in \mathscr{F} \land x \notin A \\
+  & \Longleftrightarrow (\exists A: A \in \mathscr{F} \land x \in B) \land (\exists A: A \in \mathscr{F} \land x \notin A) \\
+  & \Longleftrightarrow \exists A: A \in \mathscr{F} \land (x \in B \land x \notin A) \\
+  & \Longleftrightarrow \exists A: A \in \mathscr{F} \land x \in B - A \\
+  & \Longleftrightarrow x \in \bigcup_{A \in \mathscr{F}} B - A
+  \end{split}$$
+  
+**20a** Prove that one of the following two formulas is always right and the other one is sometimes wrong:
+
+$$\text{(i) } A - (B - C) = (A - B) \cup C$$
+
+$\text{(i)}$ is false because $A \cap C = C$ is not always true:
+
+$$\begin{split}
+  x \in A - (B - C) & \Longleftrightarrow x \in A \land x \notin B - C \\
+  & \Longleftrightarrow x \in A \land (x \notin B \lor x \in C) \\
+  & \Longleftrightarrow (x \in A \land x \notin B) \lor (x \in A \land x \in C) \\
+  & \Longleftrightarrow x \in A - B \lor x \in A \cap C \\
+  & \Longleftrightarrow x \in (A - B) \cup (A \cap C)
+  \end{split}$$
+
+$$\text{(ii) } A - (B \cup C) = (A - B) - C$$
+
+$\text{(ii) }$ is true because:
+
+$$\begin{split}
+  x \in A - (B \cup C) & \Longleftrightarrow x \in A \land x \notin B \cup C \\
+  & \Longleftrightarrow x \in A \land (x \notin B \land x \notin C) \\
+  & \Longleftrightarrow (x \in A \land x \notin B) \land x \notin C \\
+  & \Longleftrightarrow x \in A - B \land x \notin C \\
+  & \Longleftrightarrow x \in (A - B) - C
+  \end{split}$$
+
+**20b** State an additional necessary and sufficient condition for the formula which is sometimes incorrect to be always right.
+
+For $\text{(i)}$ to be true we need that $A \cap C = C$. Also because $A \cap C = C \Longleftrightarrow C \subseteq A$ another alternative is to point out that $C \subseteq A$ is a necessary and sufficient condition for $\text{(i)}$ to be true.   
 
 ## A Set of Axioms for the Real-Number System
 
