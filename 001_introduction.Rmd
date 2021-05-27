@@ -828,6 +828,372 @@ For $\text{(i)}$ to be true we need that $A \cap C = C$. Also because $A \cap C 
 
 ### Exercises I 3.3 {#exrI3.3}
 
+**1** Prove Theorems I.5 through I.15, using Axioms 1 through 6 and Theorems I.1 through I.4.
+
+**Theorem I.5** $a(b - c) = ab - ac$
+
+$$\begin{split}
+  a(b - c) & = a(b  + (-c)) & \text{ Theorem I.3} \\
+  & = ab  + a(-c) & \text{ Axiom 3} \\
+  & = (ab + a(-c)) + 0 & \text{ Axiom 4} \\
+  & = (ab + a(-c)) + (ac + (-ac)) & \text{ Theorem I.2} \\
+  & = ab + (a(-c) + (ac + (-ac))) & \text{ Axiom 2} \\
+  & = ab + ((a(-c) + ac) + (-ac)) & \text{ Axiom 2} \\
+  & = ab + (a((-c) + c) + (-ac)) & \text{ Axiom 3} \\
+  & = ab + (a( c + (-c)) + (-ac)) & \text{ Axiom 1} \\
+  & = ab + (a0 + (-ac)) & \text{ Theorem I.2} \\
+  & = (ab + a0) + (-ac) & \text{ Axiom 2} \\
+  & = a(b + 0) + (-ac) & \text{ Axiom 3} \\
+  & = ab + (-ac) & \text{ Axiom 4} \\
+  & = ab -ac & \text{ Theorem I.3}
+  \end{split}$$
+
+**Theorem I.6** $0a = a0 = 0$
+
+First 
+
+$$0a = a0 \text{ Axiom 1}$$
+
+Second
+
+$$\begin{split}
+  a0 & = a(0 + 0) & \text{ Axiom 4} \\
+  & = a0 + a0 & \text{ Axiom 3}    
+  \end{split}$$
+
+Third 
+
+$$\begin{split}
+  a0 & = a0 + 0 \text{ Axiom 4}
+  \end{split}$$
+
+Fourth
+
+$$\begin{split}
+  a0 + a0 & = a0 + 0 \Longrightarrow a0 = 0  \text{ Theorem I.1}
+  \end{split}$$
+
+Therefore $0a = a0 = 0$
+
+**Theorem I.7** CANCELLATION LAW OF MULTIPLICATION. If $ab = ac$ and $a \neq 0$, then $b = c$. (In particular, this shows that the number $1$ of Axiom 4 is unique)
+
+First
+
+$$\begin{split}
+  a \neq 0 \Longrightarrow \exists y: y \in \mathbb{R} \land ay = 1 \text{ Axiom 6}
+  \end{split}$$
+
+Second
+
+$$\begin{split}
+  b & = 1b & \text{ Axiom 4} \\
+  & = (ay)b \\
+  & = (ya)b & \text{ Axiom 1} \\
+  & = y(ab) & \text{ Axiom 2} \\
+  & = y(ac) \\
+  & = c & \text{ Axioms 2, 1, 4} \\
+  \end{split}$$
+
+**Theorem I.8** POSSIBILITY OF DIVISION. Given $a$ and $b$ with $a \neq 0$, there is exactly one $x$ such that $ax = b$. This $x$ is denoted by $b/a$ or $\frac{a}{b}$ and is called the quotient of $b$ and $a$. In particular, $1/a$ is also written $a^{-1}$ and is called the reciprocal of a.
+
+First
+
+$$\begin{split}
+  a \neq 0 \Longrightarrow \exists y: y \in \mathbb{R} \land ay = 1 \text{ Theorem I.3}
+  \end{split}$$
+
+Second
+
+$$\begin{split}
+  b & = 1b & \text{ Axiom 4} \\
+  & = (ay)b \\
+  & = a(yb) & \text{ Axiom 2} \\
+  & = ax & \text{ where } x = yb 
+  \end{split}$$
+
+Third, if $ax = b$ and $az = b$ then by **Theorem I.7** $x = z$ so $x$ is unique.
+
+**Theorem I.9** If $a \neq 0$, then $b/a = ba^{-1}$
+
+First
+
+$$\begin{split}
+  a \neq 0 \land 1 \in \mathbb{R} \Longrightarrow \exists! a^{-1}: a^{-1} \in \mathbb{R} \land aa^{-1} = 1 \text{ Theorem I.8}
+  \end{split}$$
+
+Second
+
+$$\begin{split}
+  a \neq 0 \land b \in \mathbb{R} \Longrightarrow \exists! b/a: b/a \in \mathbb{R} \land ab/a = b \text{ Theorem I.8}
+  \end{split}$$
+
+Third
+
+$$\begin{split}
+  b & = 1b & \text{ Axiom 4} \\
+  & = (aa^{-1})b \\
+  & = a(a^{-1}b) & \text{ Axiom 2} \\
+  & = a(ba^{-1}) & \text{ Axiom 1} \\
+  \end{split}$$
+
+Fourth
+
+$$\begin{split}
+  ab/a = b \land b = a(ba^{-1}) \Longrightarrow b/a = ba^{-1} \text{ Theorem I.7}
+  \end{split}$$
+
+**Theorem I.10** If $a \neq 0$, then $(a^{-1})^{{-1}} = a$
+
+First, if $a \neq 0$ we can use **Theorem I.8**
+
+Second
+
+$$\begin{split}
+  1 & = a^{-1}(a^{-1})^{{-1}} \text{ Theorem I.8} \\
+  \end{split}$$
+
+Third
+
+$$\begin{split}
+  1 & = aa^{-1} & \text{ Theorem I.8} \\
+  & = a^{-1}a & \text{ Axiom 1}
+  \end{split}$$
+
+Fourth
+
+$$\begin{split}
+  1 = a^{-1}(a^{-1})^{{-1}} \land 1 = a^{-1}a  \Longrightarrow (a^{-1})^{{-1}} = a \text{ Theorem I.7}
+  \end{split}$$
+
+**Theorem I.11** If $ab = 0$, then $a = 0$ or $b = 0$
+
+To prove this statement we are going to use the method of *reductio ad absurdum* and the equivalence between the statements $A \Longrightarrow B$ and $\neg(A \land (\neg B))$. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]
+
+First
+
+$$\begin{split}
+  (ab = 0 \Longrightarrow (a = 0 \lor b = 0)) & \Longleftrightarrow \neg(ab = 0 \land \neg(a = 0 \lor b = 0)) \\
+  & \Longleftrightarrow \neg(ab = 0 \land (a \neq 0 \land b \neq 0))
+  \end{split}$$
+
+Second, we are going to assume $(ab = 0 \land (a \neq 0 \land b \neq 0)$, find a contradiction and conclude that $\neg(ab = 0 \land (a \neq 0 \land b \neq 0)$ is true where this means that the original statement is true: $ab = 0 \Longrightarrow (a = 0 \lor b = 0)$
+
+Third
+
+$$\begin{split}
+  a0 = 0 \text{ Theorem I.6}
+  \end{split}$$
+
+Fourth
+
+$$\begin{split}
+  a0 = 0 \land ab = 0 \Longrightarrow b = 0 \text{ Theorem I.7}
+  \end{split}$$
+
+Fifth, there is a contradiction because we assume initially that $b \neq 0$ so $\neg(ab = 0 \land (a \neq 0 \land b \neq 0)$ is true by the method of *reductio ad absurdum*. Therefore the original statement is true: $ab = 0 \Longrightarrow (a = 0 \lor b = 0)$
+
+**Theorem I.12** $(-a)b = -(ab)$ and $(-a)(-b) = ab$
+
+In the case of $(-a)b = -(ab)$:
+
+First
+
+$$\begin{split}
+  0 & = (-a)b + (-(-a)b) & \text{ Theorem I.8} \\
+  & = (-a)b + (ab) & \text{ Theorem I.4} \\
+  & = (ab) + (-a)b & \text{ Axiom 1}
+  \end{split}$$
+
+Second
+
+$$\begin{split}
+  0 & = (ab) + (-(ab)) \text{ Theorem I.8}
+  \end{split}$$
+
+Third
+
+$$\begin{split}
+  0 = (ab) + (-a)b \land 0 = (ab) + (-(ab)) \Longrightarrow (-a)b = (-(ab))  \text{ Theorem I.1}
+  \end{split}$$
+
+Fourth
+
+$$\begin{split}
+  -(ab) & = 0 - (ab) & \text{ Theorem I.2} \\
+  & = 0 + (-(ab)) & \text{ Theorem I.3} \\
+  & = (-(ab)) + 0 & \text{ Axiom 1} \\
+  & = (-(ab)) & \text{ Axiom 4}
+  \end{split}$$
+
+Fifth
+
+$$\begin{split}
+  (-a)b & = (-(ab)) \\
+  & = -(ab)
+  \end{split}$$
+
+In the case of $(-a)(-b) = ab$ we use the first part in **Theorem I.12**:
+
+$$\begin{split}
+  (-a)(-b) & = -(a(-b)) \\
+  & = -((-b)a) & \text{ Axiom 1} \\
+  & = (-(-b))a \\
+  & = -(-b)a & \text{ Theorem I.2, Theorem I.3, Axiom 4} \\
+  & = ba & \text{ Theorem I.4} \\
+  & = ab & \text{ Axiom 1}
+  \end{split}$$
+
+**Theorem I.13** $(a / b) + (c / d) = (ad + bc) / (bd)$ if $b \neq 0$ and $d \neq 0$
+
+First we prove that $bd(b^{-1}d^{-1}) = 1$
+
+$$\begin{split}
+  bd(b^{-1}d^{-1}) & = bb^{-1}(dd^{-1}) \text{ Axiom 2, Axiom 1} \\
+  & = 1\cdot1 \text{ Theorem I.8} \\
+  & = 1 \text{ Axiom 4}
+  \end{split}$$
+
+Second we prove that $(b^{-1}d^{-1}) = (bd)^{-1}$ taking into account that $bd(bd)^{-1} = 1$ by **Theorem I.8** 
+
+$$\begin{split}
+  bd(b^{-1}d^{-1}) = 1 \land bd(bd)^{-1} = 1 \Longrightarrow (b^{-1}d^{-1}) = (bd)^{-1} \text{ Theorem I.11, Theorem I.7}  
+  \end{split}$$
+
+
+Third
+
+$$\begin{split}
+  (a / b) + (c / d) & = (ab^{-1}) + (cd^{-1}) & \text{ Theorem I.9} \\
+  & = 1(ab^{-1}) + 1(cd^{-1}) & \text{ Axiom 4} \\
+  & = dd^{-1}(ab^{-1}) + bb^{-1}(cd^{-1}) & \text{ Theorem I.8, Theorem I.9} \\
+  & = (b^{-1}d^{-1})ad + (b^{-1}d^{-1})bc & \text{ Axiom 2, Axiom 1} \\
+  & = (ad + bc)(b^{-1}d^{-1}) & \text{ Axiom 3, Axiom 1} \\
+  & = (ad + bc)(bd)^{-1} \\
+  & = (ad + bc) / (bd) & \text{  Theorem I.9}
+  \end{split}$$
+  
+**Theorem I.14** $(a / b)(c / d) = (ac) / (bd)$ if $b \neq 0$ and $d \neq 0$
+
+First, check out the proof of **Theorem I.13** where we prove that $(b^{-1}d^{-1}) = (bd)^{-1}$
+
+Second
+
+$$\begin{split}
+  (a / b)(c / d) & = (ab^{-1})(cd^{-1}) & \text{ Theorem I.9} \\
+  & = (ac)(b^{-1}d^{-1}) & \text{ Axiom 2, Axiom 1} \\
+  & = (ac)(bd)^{-1} & \text{ Axiom 2, Axiom 1} \\
+  & = (ac) / (bd) & \text{ Theorem I.9}
+  \end{split}$$
+
+**Theorem I.15** $(a / b) / (c / d) = (ad) / (bc)$ if $b \neq 0$, $c \neq 0$ and $d \neq 0$ 
+
+First, check out the proof of **Theorem I.13** where we prove that $(b^{-1}d^{-1}) = (bd)^{-1}$. Using this result we can also prove that $(b^{-1}(d^{-1})^{-1}) = (bd^{-1})^{-1}$ where $b$ and $d$ are any real numbers different from $0$
+
+Second
+
+$$\begin{split}
+  (a / b) / (c / d) = (ad) / (bc) & = (ab^{-1}) / (cd^{-1}) & \text{ Theorem I.9} \\
+  & = (ab^{-1})(cd^{-1})^{-1} & \text{ Theorem I.9} \\
+  & = (ab^{-1})(c^{-1}(d^{-1})^{-1}) \\
+  & = (ab^{-1})(c^{-1}d) & \text{ Theorem I.10} \\
+  & = (ad)(b^{-1}c^{-1}) & \text{ Axiom 2, Axiom 1} \\
+  & = (ad)(bc)^{-1} \\
+  & = (ad) / (bc) & \text{ Theorem I.9}
+  \end{split}$$
+
+In Exercises 2 through 10, prove the given statements or establish the given questions. You may use Axioms 1 through 6 and Theorems I.1 through I.15.
+
+**2** $-0 = 0$
+
+$$\begin{split}
+  -0 \land 0 & \Longleftrightarrow 0 + (-0) = 0 \land 0 + 0 = 0 & \text{ Axiom 4, Theorem I.2} \\
+  & \Longleftrightarrow (-0) = 0 & \text{ Theorem I.1} \\
+  & \Longleftrightarrow -0 = 0 & \text{ Theorem I.3, Theorem I.2, Axiom 4}
+  \end{split}$$
+
+**3** $1^{-1} = 1$
+
+$$\begin{split}
+  1^{-1} \land 1 & \Longleftrightarrow 1\cdot 1^{-1} = 1 \land 1 \cdot 1 = 1 & \text{ Axiom 4, Axiom 6, Theorem I.8} \\
+  & \Longleftrightarrow 1^{-1} = 1 & \text{ Theorem I.7}
+  \end{split}$$
+
+**4** Zero has no reciprocal
+
+To prove this statement we are going to use the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]
+
+First, let's assume that $x$ is the reciprocal of $0$. Then by **Theorem 1.8** $0 \cdot x = 1$.
+
+Second by **Theorem 1.6** $0 \cdot x = 0$ but we are assuming that $0 \cdot x = 1$ so $0 = 1$.
+
+Third, there is a contradiction because by **Axiom 4** $0$ and $1$ are distinct.
+
+Fourth $0 \cdot x = 1$ is false and $0 \cdot x \neq 1$ is true so zero has no reciprocal.
+
+**5** $-(a + b) = -a - b$
+
+$$\begin{split}
+  -(a + b) & = -1(a + b) & \text{ Axiom 4} \\
+  & = -1a + (-1b) & \text{ Axiom 3} \\
+  & = -a + (-b) & \text{ Axiom 4} \\
+  & = -a - b & \text{ Theorem I.3} \\
+  \end{split}$$
+
+**6** $-(a - b) = -a + b$
+
+$$\begin{split}
+  -(a - b) & = -1(a - b) & \text{ Axiom 4} \\
+  & = -1a + (-1)(-b) & \text{ Axiom 3} \\
+  & = -1a + 1b & \text{ Theorem I.12} \\
+  & = -a + b & \text{ Axiom 4}
+  \end{split}$$
+
+**7** $(a - b) + (b - c) = a + c$
+
+$$\begin{split}
+  (a - b) + (b - c) & = (a + (-b)) + (b + (-c)) & \text{ Theorem I.3} \\
+  & = (a + ((-b) + b)) + (-c) & \text{ Axiom 2} \\
+  & = (a + 0) + (-c) & \text{ Axiom 1, Axiom 4} \\
+  & = a - c & \text{ Axiom 4, Theorem I.3} \\
+  \end{split}$$
+
+**8** If $a \neq 0$ and $b \neq 0$, then $(ab)^{-1} = (a^{-1}b^{-1})$
+
+Check out the proof of **Theorem I.13** where we prove that $(b^{-1}d^{-1}) = (bd)^{-1}$
+
+**9** $-(a / b) = (-a / b) = a / (-b)$ if $b \neq 0$
+
+First we prove that $-1 \neq 0$. If $-1 = 0$ then $1 + (-1) = 0$ and $0 + 0 = 0$ will imply that $1 = 0$ which is not true by **Axiom 4**. Therefore by *reductio ad absurdum* (please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]) $-1 \neq 0$ must be true. 
+
+Second we prove that $-b^{-1} = (-b)^{-1}$. Because $(-b)(-b)^1 = 1$ by **Theorem I.8**, $(-b)(-b^{-1}) = bb^{-1} = 1$ by **Theorem I.12, Theorem I.8** and $-b = -1b \neq 0$ by **Theorem I.11** we can conclude that $-b^{-1} = (-b)^{-1}$ using **Theorem I.7**. 
+
+$$\begin{split}
+  -(a / b) & = -(ab^{-1}) & \text{ Theorem I.9} \\
+  & = (-ab^{-1}) & \text{ Theorem I.3, Axiom 4} \\
+  & = (-a / b) & \text{ Theorem I.9} \\
+  & = (-ab^{-1}) & \text{ Theorem I.9} \\
+  & = (-b^{-1}a) & \text{ Axiom 1} \\
+  & = -(b^{-1}a) & \text{ Theorem I.3, Axiom 4} \\
+  & = (-b^{-1})a & \text{ Theorem I.12} \\
+  & = (-b)^{-1}a \\
+  & = a(-b)^{-1} & \text{ Axiom 1} \\
+  & = a / (-b) & \text{ Theorem I.9}
+  \end{split}$$
+  
+  **10** $(a / b) - (c / d) = (ad - bc) / (bd)$ if $b \neq 0$ and $d \neq 0$
+  
+  In this part remember exercise **8**
+
+$$\begin{split}
+  (a / b) - (c / d) & = (ab^{-1}) - (cd^{-1}) & \text{ Theorem I.9} \\
+  & = 1(ab^{-1}) - 1(cd^{-1}) & \text{ Axiom 4} \\
+  & = dd^{-1}(ab^{-1}) - bb^{-1}(cd^{-1}) & \text{ Theorem I.8, Theorem I.9} \\
+  & = (b^{-1}d^{-1})ad - (b^{-1}d^{-1})bc & \text{ Axiom 2, Axiom 1} \\
+  & = (ad - bc)(b^{-1}d^{-1}) & \text{ Axiom 3, Theorem I.5, Axiom 1} \\
+  & = (ad - bc)(bd)^{-1} \\
+  & = (ad - bc) / (bd) & \text{  Theorem I.9}
+  \end{split}$$
+
 ### Exercises I 3.5 {#exrI3.5}
 
 ### Exercises I 3.12 {#exrI3.12}

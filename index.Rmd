@@ -24,5 +24,6 @@ Currently it is a work in progress
 - To all the taxpayers of Colombia for allowing me to access the benefits of public expending 
 - To the [Business Science](https://www.business-science.io/) and [R4DS Online Learning](https://www.rfordatasci.com/) communities where I learn [R](https://www.r-project.org/about.html)
 - To the [R Core Team](https://www.r-project.org/contributors.html), the creators of [RStudio IDE](https://www.rstudio.com/products/rstudio/) and the authors and maintainers of the packages [`rmarkdown`](https://github.com/rstudio/rmarkdown), [`bookdown`](https://github.com/rstudio/bookdown), [`tidyverse`](https://github.com/tidyverse/tidyverse), [`latex2exp`](https://github.com/stefano-meschiari/latex2exp) and [`patchwork`](https://github.com/thomasp85/patchwork) for allowing me to access these tools without paying for a license
+- To the author of the book [@xie_bookdown_2021] for allowing me to build this book
 - To the [Linux kernel community](https://www.kernel.org/category/about.html) for allowing me the possibility to use some [Linux distributions](https://static.lwn.net/Distributions/) as my main OS without paying for a license
 
