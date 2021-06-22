@@ -1226,7 +1226,7 @@ $$\begin{split}
 
 $$\begin{split}
   a < 0 & \Longrightarrow -a > -0 & \text{ Theorem I.23} \\
-  & \Longrightarrow -a > 0 & \text{ Exercises I.33 2}
+  & \Longrightarrow -a > 0 & \text{ Exercises I 3.3 2}
   \end{split}$$
 
 **Theorem I.24** If $ab > 0$, then both $a$ and $b$ are positive or both are negative
@@ -1254,7 +1254,7 @@ $$\begin{split}
   & \Longrightarrow (c + d) + ((-a) + (-b)) \in \mathbb{R}^+ & \text{ Axiom 2} \\
   & \Longrightarrow (c + d) + (-a + (-b)) \in \mathbb{R}^+ & \text{ Theorem I.3, Theorem I.2, Axiom 4} \\
   & \Longrightarrow (c + d) + (-a - b) \in \mathbb{R}^+ & \text{ Theorem I.3} \\
-  & \Longrightarrow (c + d) + (-(a + b)) \in \mathbb{R}^+ & \text{ Exercises I.33 5} \\
+  & \Longrightarrow (c + d) + (-(a + b)) \in \mathbb{R}^+ & \text{ Exercises I 3.3 5} \\
   & \Longrightarrow (c + d) - (a + b) \in \mathbb{R}^+ & \text{ Theorem I.3} \\
   & \Longrightarrow c + d > a + b & \text{ By definition}
   \end{split}$$
@@ -1269,7 +1269,7 @@ Second, if $x = 0$ then $x^2 = 0$ by **Theorem I.6**. But we would have that $0 
 
 Third, if $x \neq 0$ then $x^2 + 1 = 1 + x^2 = 0$ and therefore $x^2 = -1$ by **Axiom 1** and **Theorem I.2**
 
-Fourth, $-1 < 0$ by **Theorem I.21**, **Theorem I.23** and **Exercises I.33 2** so $-1 = x^2 < 0$. But $x^2 > 0$ by **Theorem I.20** where this is a contradiction by **Theorem I.16** 
+Fourth, $-1 < 0$ by **Theorem I.21**, **Theorem I.23** and **Exercises I 3.3 2** so $-1 = x^2 < 0$. But $x^2 > 0$ by **Theorem I.20** where this is a contradiction by **Theorem I.16** 
 
 Fifth, we conclude that $x^2 + 1 = 0$ is false so $x^2 + 1 \neq 0$ must be true.
 
@@ -1280,9 +1280,9 @@ $$\begin{split}
   & \Longrightarrow -a \in \mathbb{R} \land -b \in \mathbb{R} & \text{ By definition} \\
   & \Longrightarrow -a + (-b) \in \mathbb{R} & \text{ Axiom 7} \\
   & \Longrightarrow -a - b \in \mathbb{R} & \text{ Theorem I.3} \\
-  & \Longrightarrow -(a + b) \in \mathbb{R} & \text{ Exercises I.33 5} \\
+  & \Longrightarrow -(a + b) \in \mathbb{R} & \text{ Exercises I 3.3 5} \\
   & \Longrightarrow -(a + b) > 0 & \text{ By definition} \\
-  & \Longrightarrow -(-(a + b)) < 0 & \text{ Theorem I.23, Exercises I.33 2} \\
+  & \Longrightarrow -(-(a + b)) < 0 & \text{ Theorem I.23, Exercises I 3.3 2} \\
   & \Longrightarrow a + b < 0 & \text{ Theorem I.4} \\
   \end{split}$$
 
@@ -1308,7 +1308,7 @@ $$\begin{split}
   & \Longrightarrow 0 < b \land 1b^{-1} < (a^{-1}b)b^{-1} & \text{ Theorem I.19} \\
   & \Longrightarrow 0 < b \land b^{-1} < a^{-1}1 & \text{ Axiom 2, Theorem I.8} \\
   & \Longrightarrow 0 < b \land b^{-1} < a^{-1} & \text{ Axiom 2, Axiom 4} \\
-  & \Longrightarrow 0 < b^{-1} < a^{-1} & \text{ Exercises I.35 4} \\
+  & \Longrightarrow 0 < b^{-1} < a^{-1} & \text{ Exercises I 3.5 4} \\
   \end{split}$$
 
 **6** If $a \leq b$ and $b \leq c$, then $a \leq c$
@@ -1386,6 +1386,290 @@ Second, apart from $x \leq 0$ we also have that $x \geq 0$. Therefore because $(
 
 ### Exercises I 3.12 {#exrI3.12}
 
+**1** If $x$ and $y$ are arbitrary real numbers with $x < y$, prove that there is at least one real $z$ satisfying $x < z < y$
+
+Let choose an arbitary $w \in \mathbb{R}^+$ and use $\mathbb{Z}^+$ to denote the set of positive integers:
+
+$$\begin{split}
+  w \in \mathbb{R}^+ \land y - x \in \mathbb{R}^+ & \Longrightarrow n(y - x) > w \land n \in \mathbb{Z}^+ \text{ Theorem I.30} \\
+  & \Longrightarrow n(y - x) > w \land n^{-1} \in \mathbb{R}^+ \text{ Exercises I 3.5 4, Theorem I.8} \\
+  & \Longrightarrow 1(y - x) > wn^{-1} \text{ Theorem I.19, Axiom 1, Theorem I.18} \\
+  & \Longrightarrow y - x > w/n \text{ Axiom 4, Theorem I.9} \\
+  & \Longrightarrow y > w/n + x \text{ Theorem I.18, Axiom 4, Axiom 5} \\
+  & \Longrightarrow y > w/n + x \land wn^{-1} \in \mathbb{R}^+ \text{ Axiom 7} \\
+  & \Longrightarrow y > w/n + x > x \text{ Theorem 1.18, Axiom 4, Theorem 1.9} \\
+  & \Longrightarrow z = w/n + x
+  \end{split}$$
+  
+Some examples of $z$ are $|y - x| / n + x$ for $n = 2, 3, \ldots$ where $|y - x|$ is the absolute value of $y - x$
+
+**2** If $x$ is an arbitrary real number, prove that there are integers $m$ and $n$ such that $m < x < n$
+
+First, by **Theorem I.29** $n > x$ were $n$ is a positive integer and therefore an integer.
+
+Second, let's use $\mathbb{Z}^-$ to denote the set of negative integers, and prove analogous results similar to **Theorem I.28** and **Theorem I.29** for $\mathbb{Z}^-$.
+
+Third, we prove the set $\mathbb{Z}^-$ of negative integers $-1, -2, -3, \ldots$ is unbounded below using the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]. Assume to the contrary that $\mathbb{Z}^-$ is bounded below so by  **Theorem I.27** $\mathbb{Z}^-$ has a greatest lower bound. Therefore exists $c \in \mathbb{R}$ such that $c \leq x$ for all $x \in \mathbb{Z}^-$. Then $c + 1$ can not be a lower bound for $\mathbb{Z}^-$ because $c < c + 1$ so there is some $m \in \mathbb{Z}^-$ such that $m < c + 1$. So it must be the case that  $-(-m + 1) < c$ where $-(-m + 1) \in \mathbb{Z}^-$ but this is a contradiction because $c$ is the greatest lower bound of $\mathbb{Z}^-$. Therefore we must conclude that $\mathbb{Z}^-$ is unbounded below.
+
+Fourth, we prove that for every real $x$ there exists a negative integer $m$ such that $x > m$. We prove this statement using the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]. If this is not the case $x$ would be a lower bound for $\mathbb{Z}^-$ but this is not true. So we must conclude that for every real $x$ there exists a negative integer $m$ such that $x > m$.
+
+Fifth, we have that if $x$ is an arbitrary real number there are integers $m$ and $n$ such that $n > x > m$ where in this case $n$ is a positive integer and $m$ is a negative integer.
+
+**3** If $x > 0$, prove that there is a positive integer $n$ such that $1 / n < x$
+
+$$\begin{split}
+  x > 0 & \Longrightarrow nx > 1 & \text{ Theorem I.30} \\
+  & \Longrightarrow x > n^{-1}1 & \text{ Theorem I.19, Axiom 1, Theorem I.8, Axiom 4} \\
+  & \Longrightarrow x > 1 / n & \text{ Axiom 1, Theorem I.9}
+  \end{split}$$
+
+**4** If $x$ is an arbitrary real number, prove that there is exactly one integer $n$ which satisfies the inequalities $n \leq x < n + 1$. This $n$ is called the greatest integer in $x$ and is denoted by $[x]$. For example $[5] = 5$, $\left[ \frac{5}{2} \right] = 2$, $\left[ -\frac{8}{3} \right] = -3$
+
+First, we prove that if $S \subseteq \mathbb{Z}$, $S \neq \emptyset$ and $S$ is bounded above then $sup \; S$ exists and $sup \; S = max \; S$. We have that $sup \; S$ exists by **Axiom 10**. Now, we prove that $sup \; S = max \; S$ using the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]. Let's assume that $sup \; S \notin S$ then for all $s \in S$ we have that $sup \; S > s$. Because $sup \; S > Sup \; S - 1$ then $sup \; S - 1$ is not an upper bound so there exists some $s^* \in S$ such that $s^* > sup \; S - 1$. Also because $s^*$ is not an upper bound there exists some $s^{**} \in S$ such that $s^{**} > s^*$. Therefore we have that $sup \; S > s^{**} > s^* > sup \; S - 1$ so we have that $1 = sup \; S - (sup \; S - 1) > s^{**} - (sup \; S - 1) > s^{**} - s^*$ where this means that $1 > s^{**} - s^* > 0$. But this is a contradiction because if $s^{**} \in S$ and $s^* \in S$ then $s^{**} \in \mathbb{Z}$ and $s^* \in \mathbb{Z}$ so if $s^{**} > s^*$ it must be that $s^{**} - s^* \geq 1$. In that case $sup \; S \in S$ so $sup \; S = max \; S$. 
+
+Second, let $S = \{y: y \leq x \land y \in \mathbb{Z} \text{ where } x \in \mathbb{R} \}$. We have that $S \subseteq \mathbb{Z}$, $S$ is bounded above by $x$ and also by **Exercises I 3.12 2** $S \neq \emptyset$. Therefore by the first part $sup \; S$ exists and $sup \; S = max \; S$. Because $sup \; S \in S$ then $sup \; S \leq x$ and $sup \; S \in \mathbb{Z}$. Also $sup \; S = max \; S$, $sup \; S < sup \; S + 1$ and $sup \; S + 1 \in \mathbb{Z}$ then $sup \; S + 1 \notin S$ so $x < sup \; S + 1$. Finally, we have that $sup \; S < x < sup \; S + 1$, $sup \; S \in \mathbb{Z}$ and $sup \; S$ is unique by **Theorem I.26**.
+
+**Observation 1**: Also we have that:
+
+$$\begin{split}
+  n \leq x < n + 1 & \Longrightarrow \left[ x \right] \leq x \land x < \left[ x \right] + 1 & \text{ By definition} \\
+  & \Longrightarrow \left[ x \right] + 1 \leq x + 1 \land x < \left[ x \right] + 1 & \text{ Theorem I.18} \\
+  & \Longrightarrow x < \left[ x \right] + 1 \leq x + 1 & \text{ Theorem I.17} \\
+  \end{split}$$
+
+**Observation 2**: A better notation would be $n = \lfloor x \rfloor$ for $n \leq x < n + 1$ to differentiate it from $m = \lceil x \rceil$ for $m - 1 < x \leq m$. For example $\lfloor 2.5 \rfloor = 2$, $\lceil 2.5 \rceil = 3$ and $\lfloor 2 \rfloor = 2 = \lceil 2 \rceil$
+
+**5** If $x$ is an arbitrary real number, prove that there is exactly one integer $n$ which satisfies $x \leq n < x + 1$.
+
+First, we prove that if $S \subseteq \mathbb{Z}$, $S \neq \emptyset$ and $S$ is bounded below then $inf \; S$ exists and $inf \; S = min \; S$. We have that $inf \; S$ exists by **Theorem I.27**. Now let $-S = \{-y: y \in S \}$ then $-S \subseteq \mathbb{Z}$, $-S \neq \emptyset$ and $-S$ is bounded above. By the first part in the proof of **Exercises I 3.12 4** $-S$ we have that $sup -S = max -S$ so $-(-sup -S) = -(-max -S)$ by **Theorem I.4**. Because $-(-sup -S) \in -S$ then $-sup -S \in S$ and also we have that $-sup -S = inf \; S$. Therefore $inf \; S = min \; S$.
+
+Second, let $S = \{y: x \leq y \land y \in \mathbb{Z} \text{ where } x \in \mathbb{R} \}$. We have that $S \subseteq \mathbb{Z}$, $S$ is bounded below by $x$ and also by **Exercises I 3.12 2** $S \neq \emptyset$. Therefore by the first part $inf \; S$ exists and $inf \; S = min \; S$. Because $inf \; S \in S$ then $x \leq inf \; S$ and $inf \; S \in \mathbb{Z}$.
+
+Third, if $inf^* \; S$ is another greater lower bound then $inf \; S \geq inf^* \; S$. But $inf \; S$ is also a greater bound so $inf^* \; S \geq inf \; S$. Therefore $inf \; S = inf^* \; S$ where this means that $inf \; S$ is unique.
+
+Fourth, if $inf \; S = x$ then by **Exercises I 3.12 4** $inf \; S = x < inf \; S + 1 = x + 1$. Also if $x < inf \; S = (inf \; S - 1) + 1$ by **Exercises I 3.12 4** $inf \; S - 1 < x$ so $inf \; S < x + 1$.
+
+Fifth, we have that $x \leq inf \; S < x + 1$, $inf \; S \in \mathbb{Z}$ and $sup \; S$ is unique.
+
+**Observation**: We can denote this $inf \; S = n$ as $n = \lceil x \rceil$ for $x \leq \lceil x \rceil < x + 1$. For example $\lceil 2.5 \rceil = 3$ and $\lceil 2 \rceil = 2$
+
+**6** If $x$ and $y$ are arbitrary real numbers, $x < y$, prove that there exists at least one rational number $r$ satisfying $x < r < y$, and hence infinitely many. This property is often described by saying that the rational numbers are dense in the real-number system.
+
+First, we have that:
+
+$$\begin{split}
+  y > x & \Longrightarrow y - x > 0 \text{ By definition} \\
+  & \Longrightarrow (y - x)^{-1} \text{ Theorem I.8} \\
+  & \Longrightarrow  (y - x)^{-1} + 1 \geq \left[ (y - x)^{-1} \right]  + 1 > (y - x)^{-1} \text{ Exercises I 3.12 4 Observation 1} \\
+  & \Longrightarrow  (y - x)(\left[ (y - x)^{-1} \right] + 1) > 1 \text{ Theorem I.19, Theorem I.8} \\
+  & \Longrightarrow  (y - x)n > 1 \text{ where } n = \left[ (y - x)^{-1} \right] + 1 \land n \in \mathbb{Z}^+ \\
+  \end{split}$$
+
+Second, we have that:
+
+$$\begin{split}
+  y > x & \Longrightarrow y - x > 0 & \text{ By definition} \\
+  & \Longrightarrow n(y - x) > 1 \text{ where } n \geq \left[ (y - x)^{-1} \right] + 1 & \text{ Theorem I.30} \\
+  & \Longrightarrow ny > 1 + nx \\
+  & \Longrightarrow ny > 1 + nx \geq 1 + \left[ nx \right] > nx & \text{ Exercises I 3.12 4 Observation 1} \\
+  & \Longrightarrow ny > 1 + \left[ nx \right] > nx \\
+  & \Longrightarrow y > \frac{1 + \left[ nx \right]}{n} > x \\
+  & \Longrightarrow y > r > x
+  \end{split}$$
+  
+**Observation 1**: For example, $2\pi > \pi$ and $2\pi - \pi > 1 > 0$. Therefore we can fix $n = \left[ \pi^{-1} \right] + 1 = 1$ where $1*(2\pi - \pi) > 1$ and $r = \frac{1 + [1\pi]}{1} = \frac{1 + 3}{1} = \frac{4}{1}$.  
+  
+**Observation 2**: For example, $\pi > e$ and $1 \geq \pi - e > 0$. Therefore we can fix $n = \left[ (\pi - e)^{-1} \right] + 1 = 2 + 1 = 3$ where $3*(\pi - e) > 1$ and $r = \frac{1 + [3e]}{3} = \frac{1 + 8}{3} = \frac{3}{1}$.
+
+Third, we have that $y > r > x$ so we can choose $n = \left[ (y - x)^{-1} \right] + 1, \left[ (y - x)^{-1} \right] + 2, \ldots$ to fix $r$. Therefore there are countable infinite $r$'s between $y$ and $x$ that we can build in this way.
+
+**7** If $x$ is rational, $x \neq 0$ and $y$ irrational, prove that $x + y$, $x - y$, $xy$, $x/y$ and $y/x$ are all irrational.
+
+To prove these statements we are going to use the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]
+
+First, assume that $x + y$ is rational: 
+
+$$\begin{split}
+  x + y = \frac{a}{b} & \Longrightarrow \frac{c}{d} + y = \frac{a}{b} & \text{ By definition} \\
+  & \Longrightarrow y = \frac{a}{b} - \frac{c}{d} \\
+  & \Longrightarrow y = \frac{ad - bc}{bd} & \text{ Exercises I 3.3 10} \\
+  & \Longrightarrow y \in \mathbb{Q} & \text{ This is a contradiction}
+  \end{split}$$
+
+Therefore $x + y \notin \mathbb{Q}$ but $x + y \notin \mathbb{R}$ so $x + y$ is irrational. 
+
+Second, for $x - y$ we prove that if $y$ is irrational then $-y$ is irrational. Assume that $y$ is irrational and $-y$ rational so $- y = \frac{a}{b}$ for $a \in \mathbb{Z}$, $b \in \mathbb{Z}$ and $b \neq 0$ but $y = -\frac{a}{b}$ would be rational where this is a contradiction. Therefore if $y$ is irrational then $-y$ is irrational is a true statement. Now we can apply the first part to $x + (-y)$ and we have that $x + (-y)$ is irrational.
+
+Third, assume that $xy$ is rational:
+
+$$\begin{split}
+  xy = \frac{a}{b} & \Longrightarrow \frac{c}{d}y = \frac{a}{b} & \text{ By definition} \\
+  & \Longrightarrow y = \frac{d}{c}\frac{a}{b} & \text{ Theorem I.9, Axiom 2, Theorem 1.8, Axiom 4} \\
+  & \Longrightarrow y = \frac{da}{cb} & \text{ Theorem I.14} \\
+  & \Longrightarrow y \in \mathbb{Q} & \text{ This is a contradiction}
+  \end{split}$$
+
+Therefore $xy \notin \mathbb{Q}$ but $xy \notin \mathbb{R}$ so $xy$ is irrational.
+
+Fourth, for $x / y = xy^{-1}$ we prove that if $y$ is irrational then $y^{-1}$ is irrational. Assume that $y$ is irrational and $y^{-1}$ rational so $y^{-1} = \frac{a}{b}$ for $a \in \mathbb{Z}$, $b \in \mathbb{Z}$ and $b \neq 0$ but $y = (y^{-1})^{-1} = (a / b)^{-1} = \frac{1}{a / b} = \frac{1 \cdot 1^{-1}}{a / b} = \frac{1 / 1}{a / b} = \frac{b}{a}$ would be rational where this is a contradiction. Therefore if $y$ is irrational then $y^{-1}$ is irrational is a true statement. Now we can apply the first part to $x / y = xy^{-1}$ and we have that $x / y$ is irrational.
+
+Fifth, for $y / x = yx^{-1} = x^{-1}y$ we prove that if $x$ is rational then $x^{-1}$ is rational. If $x$ is rational then $x^{-1} = \left( \frac{a}{b} \right)^{-1} = \frac{1}{a / b} = \frac{1 \cdot 1^{-1}}{a / b} = \frac{1 / 1}{a / b} = \frac{b}{a}$ so $x^{-1}$ is rational. Now we can apply the third part to $y / x = yx^{-1} = x^{-1}y$ and we have that $y / x$ is irrational.
+
+**8** Is the sum or product of two irrational numbers always irrational?
+
+The answer is no. If $x$ is rational, $x \neq 0$ and $y$ is irrational then $x + y$, $-y$ and $y^{-1}$ are irrationals by **Exercises I 3.12 7**. However $(x + y) + (-y) = x$ and $(xy)y^{-1} = x$ are rationals.
+
+**9** If $x$ and $y$ are arbitrary real numbers, $x < y$, prove that there exists at least one irrational number $z$ satisfying $x < z < y$, and hence infinitely many.
+
+First, let $w > 0$ and $w \in \mathbb{R} - \mathbb{Q}$. The condition $w > 0$ is not restrictive because if $w < 0$ and $w \in \mathbb{R} - \mathbb{Q}$ then $-w > 0$ and $-w \in \mathbb{R} - \mathbb{Q}$. What we need is at least one $w \in \mathbb{R} - \mathbb{Q}$.
+
+Second, if $y > x$, $w > 0$ and $w \in \mathbb{R} - \mathbb{Q}$
+
+$$\begin{split}
+  y > x  & \Longrightarrow y > r_1 > x \text{ where } r_1 \in \mathbb{Q} & \text{ Exercises I 3.12 6} \\
+  & \Longrightarrow y > r_1 > r_2 > x & \text{ Exercises I 3.12 6} \\
+  & \Longrightarrow n(r_1 - r_2) > w & \text{ Theorem I.30} \\
+  & \Longrightarrow r_1 - r_2 > \frac{w}{n} \text{ where } \frac{w}{n} \in  \mathbb{R} - \mathbb{Q} & \text{ Exercises I 3.12 7} \\
+  & \Longrightarrow r_1 > \frac{w}{n} + r_2 \text{ where } \frac{w}{n} + r_2 \in  \mathbb{R} - \mathbb{Q} & \text{ Exercises I 3.12 7} \\
+  & \Longrightarrow r_1 > \frac{w}{n} + r_2 > r_2 \\
+  & \Longrightarrow y > r_1 > \frac{w}{n} + r_2 > r_2 > x \\
+  & \Longrightarrow y > \frac{w}{n} + r_2 > x
+  \end{split}$$
+
+Third, we have that $w(r_1 - r_2)^{-1} + 1 \geq \left[ w(r_1 - r_2)^{-1} \right] + 1 > w(r_1 - r_2)^{-1}$ by **Exercises I 3.12 4 Observation 1**. Therefore $(\left[ w(r_1 - r_2)^{-1} \right] + 1)(r_1 - r_2) > w$ by **Theorem I.19**, **Exercises I 3.5 4 Observation 1**, **Theorem I.8** and **Axiom 4**. Also by **Exercises I 3.5 4** and  because $\left[ w(r_1 - r_2)^{-1} \right] \geq 0 \land 1 > 0$ we have that $\left[ w(r_1 - r_2)^{-1} \right] + 1) \in \mathbb{Z^+}$. In that sense we can fix $n = \left[ w(r_1 - r_2)^{-1} \right] + 1), \left[ w(r_1 - r_2)^{-1} \right] + 2), \ldots$
+
+Fourth, we have that $y > \frac{w}{n} + r_2 > x$ where $n \geq \left[ w(r_1 - r_2)^{-1} \right] + 1$, $n \in \mathbb{Z}^+$, $y > r_1 > r_2 > x$, $r_1 \in \mathbb{Q}$, $r_2 \in \mathbb{Q}$, $w \in \mathbb{R} - \mathbb{Q}$ and $\frac{w}{n} + r_2 \in \mathbb{R} - \mathbb{Q}$
+
+**Observation 1**: In **Exercises I 3.12 11** we are going to prove that $\sqrt{2} \in \mathbb{R} - \mathbb{Q}$ and also we have that $\sqrt{2} > 0$ because $\sqrt{2}$ is the positive root of $2$. Therefore we can fix $w = \sqrt{2}$
+
+**Observation 2**: For example, $\pi > e$ and $1 \geq \pi - e > 0$. Therefore we can fix $r_2 = \frac{1 + [(\left[ (\pi - e)^{-1} \right] + 1)e]}{\left[ (\pi - e)^{-1} \right] + 1} = \frac{1 + [3e]}{3} = \frac{1 + 8}{3} = 3$ and $r_2 = \frac{1 + [(\left[ (\pi - e)^{-1} \right] + 2)e]}{\left[ (\pi - e)^{-1} \right] + 2} = \frac{1 + [4e]}{4} = \frac{1 + 10}{4} = \frac{11}{4}$. Furthermore we can fix $\frac{w}{n} + r_2 = \frac{w}{\left[ w(r_1 - r_2)^{-1} \right] + 1} + r_2 =  \frac{\sqrt{2}}{\left[ \sqrt{2}(3 - \frac{11}{4})^{-1} \right] + 1} + \frac{11}{4} = \frac{\sqrt{2}}{5 + 1} + \frac{11}{4} = \frac{2\sqrt{2} + 33}{12}$. So $\pi > \frac{2\sqrt{2} + 33}{12} > e$ where $\frac{2\sqrt{2} + 33}{12} \in \mathbb{R} - \mathbb{Q}$
+
+**10** An integer $n$ is called even if $n = 2m$ for some integer $m$, and odd if $n + 1$ is even. Proof the following statements.
+
+**10a** An integer cannot be both even and odd
+
+To prove this statement we are going to use the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]
+
+First, if $m \in \mathbb{Z}$ and $s \in \mathbb{Z}$ then $m - s \in \mathbb{Z}$
+
+Second, assume that for some $n \in \mathbb{Z}$ we have that $n$ is even and odd:
+
+$$\begin{split}
+  n = 2m \land n + 1 = 2s & \Longrightarrow n = 2m \land n = 2s - 1 \\
+  & \Longrightarrow 2m = 2s - 1 \\
+  & \Longrightarrow 2(m - s) = - 1 \\
+  & \Longrightarrow m - s = -\frac{1}{2} \\
+  & \Longrightarrow m - s \notin \mathbb{Z} & \text{ This is a contradiction}
+  \end{split}$$
+
+Therefore, there is a contradiction so $n$ can not be even and odd at the same time.
+
+**10b** Every integer is either even or odd
+
+First, we prove that if $n \in \mathbb{Z}$ and if $s < s + 2$ then there is a unique $t \in \mathbb{Z}$ and is $t = s + 1$.
+
+$$\begin{split}
+  s < s + 2 & \Longrightarrow s = s < s + 1 \land s + 1 = s + 1 < s + 2 & \text{ where } s \text{ is unique } \text{ Exercises I 3.12 5} \\
+  & \Longrightarrow s < s + 1 < s + 2
+  \end{split}$$
+
+Second
+
+$$\begin{split}
+  n \in \mathbb{Z} & \Longrightarrow \frac{n}{2} \in \mathbb{Q} \subset \mathbb{R} \\
+  & \Longrightarrow m \leq \frac{n}{2} < m + 1 & \text{ Exercises I 3.12 5} \\
+  & \Longrightarrow 2m \leq n < 2(m + 1) \\
+  & \Longrightarrow 2m + 1 \leq n  + 1 < 2m + 3 \\
+  \end{split}$$
+
+Third, if $2m = n$ then $n$ is even. But if $2m < n$ then $2m + 1 < n + 1$ so $2m + 1 < n + 1 < 2m + 3$. Because $2m + 1 < 2m + 2 < 2m + 3$ by the first part $n + 1 = 2m + 2 = 2(m + 1)$ so $n + 1$ is even and $n$ is odd. Therefore $n$ is even or odd but no both because of **Exercises I 3.12 10a**
+
+**10c** The sum or product of two even integers is even. What can you say about the sum or product of two odd integers?
+
+First, the sum of two even integers
+
+$$\begin{split}
+  2m = n \in \mathbb{Z} \land 2s = p \in \mathbb{Z} & \Longrightarrow n + p = 2m + 2s \\
+  & \Longrightarrow n + p = 2(m + s) \text{ where } m + s  \in \mathbb{Z} \\
+  & \Longrightarrow n + p \text{ is even}
+  \end{split}$$
+
+Second, the product of two even integers
+
+$$\begin{split}
+  2m = n \in \mathbb{Z} \land 2s = p \in \mathbb{Z} & \Longrightarrow np = (2m)(2s) \\
+  & \Longrightarrow np = 2(m(2s)) \text{ where } m(2s) \in \mathbb{Z} \\
+  & \Longrightarrow np \text{ is even}
+  \end{split}$$
+
+Third, the sum of two odd integers
+
+$$\begin{split}
+  n \text{ and } p \text{ are odd} & \Longrightarrow n + 1 = 2m \land p + 1 = 2s \\
+  & \Longrightarrow (n + 1) + (p + 1) = 2m + 2s \\
+  & \Longrightarrow (n + p) + 2 = 2(m + s) \\
+  & \Longrightarrow n + p = 2(m + s) - 2 \\
+  & \Longrightarrow n + p = 2((m + s) - 1) \text{ where } 2((m + s) - 1) \in \mathbb{Z} \\
+  & \Longrightarrow n + p \text{ is even} \\
+  \end{split}$$
+
+Fourth, the product of two odd integers
+
+$$\begin{split}
+  n \text{ and } p \text{ are odd} & \Longrightarrow n + 1 = 2m \land p + 1 = 2s \\
+  & \Longrightarrow (n + 1)(p + 1) = 2m(2s) \\
+  & \Longrightarrow (np + 1) + (n + p) = 2m(2s) \\
+  & \Longrightarrow np + 1 = 2m(2s) - (n + p) \\
+  & \Longrightarrow np + 1 = 2m(2s) - 2t \text{ where } t \in \mathbb{Z} & \text{ By the third part} \\
+  & \Longrightarrow np + 1 = 2(m(2s) - t)  \text{ where } 2(m(2s) - t) \in \mathbb{Z} \\
+  & \Longrightarrow np + 1 \text{ is even} \\
+  & \Longrightarrow np \text{ is odd}
+  \end{split}$$
+
+**10d** If $n^2$ is even, so is $n$. If $a^2 = 2b^2$, where $a$ and $b$ are integers, then both $a$ and $b$ are even.
+
+First, assume $n^2$ is even. Also by  **Exercises I 3.12 10a** and **10b** $n$ is even or odd but not both. If $n$ is odd by **Exercises I 3.12 10c third part** $n^2$ would be odd so $n$ must be even.
+
+Second, because $a^2 = 2b^2$ then $a^2$ is even. By the first part $a$ is even. Therefore $a^2 = (2t)^2$ where $t \in \mathbb{Z}$ so:
+
+$$\begin{split}
+  a^2 = (2t)^2 \land a^2 = 2b^2 & \Longrightarrow (2t)^2 = 2b^2 \\
+  & \Longrightarrow 4t^2 = 2b^2 \\
+  & \Longrightarrow 2t^2 = b^2 \text{ where } t^2 \in \mathbb{Z} \\
+  & \Longrightarrow b^2 \text{ is even} \\
+  & \Longrightarrow b \text{ is even } & \text{ By the first part}
+  \end{split}$$
+
+Third, $a$ and $b$ are even.
+
+**10e** Every rational number can be expressed in the form $a / b$, where $a$ and $b$ are integers, at least one of which is odd.
+
+First, we assume that every rational number, $c \in \mathbb{Q}$, has a unique representation as an irreducible fraction[^1], $c = \frac{a}{b}$, where $a \in \mathbb{Z}$, $b \in \mathbb{Z}$, $b > 0$ and $a, b$ have no common divisors except $1$. For example, $\frac{3}{12}$ or $\frac{-3}{-12}$,  $\frac{-2}{10}$ or $\frac{2}{-10}$ and $\frac{0}{-1}$ or $\frac{0}{2}$ can be represented as $\frac{1}{4}$,  $\frac{-1}{5}$ and $\frac{0}{1}$ in its reduced form.
+
+[^1]: The complete proof can be found in [Existence of Canonical Form of Rational Number](https://proofwiki.org/wiki/Existence_of_Canonical_Form_of_Rational_Number) and [Canonical Form of Rational Number is Unique](https://proofwiki.org/wiki/Canonical_Form_of_Rational_Number_is_Unique)
+
+Second, assume $a \text{ is even } \land b \text{ is even }$ and $c = \frac{a}{b} \in \mathbb{Q}$ where $\frac{a}{b}$ is the unique representation as an irreducible fraction of $c$. Then $a = 2s$ and $b = 2t$ so $c = \frac{a}{b} = \frac{2s}{2t} = \frac{s}{t}$. But this contradicts that $\frac{a}{b}$ is the unique representation as an irreducible fraction of $c$. Therefore $a \text{ is even } \land b \text{ is even }$ is false so $a \text{ is odd } \lor b \text{ is odd }$ must be true.
+
+**11** Prove that there is no rational number whose square is $2$. $[$Hint: Argue by contradiction. Assume $(a/b)^2 = 2$, where $a$ and $b$ are integers, at least one of which is odd. Use parts of Exercise 10 to deduce a contradiction.$]$
+
+To prove this statement we are going to use the method of *reductio ad absurdum*. Please check out [@mendelson_number_2008, Chapter 1, p 7, Exercises 2 and 5]
+
+First, assume $\left( \frac{a}{b} \right)^2 = 2$ where $\frac{a}{b}$ is the unique representation as an irreducible fraction of a rational number.
+
+Second, using the results of **Exercises I 3.12 10** we have that $a \text{ is even } \land b \text{ is even }$ but this is a contradiction because $\frac{a}{b}$ is the unique representation as an irreducible fraction of a rational number. Therefore $\frac{a}{b} \notin \mathbb{Q}$ so it must be the case that $a/b = ab^{-1} \in \mathbb{R} - \mathbb{Q}$ because $a \in \mathbb{Z} \subset \mathbb{R} \land b \in \mathbb{Z}^+ \subset \mathbb{R}$
+
+**12** The Archimedean property of the real-number system was deduced as a consequence of the least-upper-bound axiom. Prove that the set of rational numbers satisfies the Archimedean property but not the least-upper-bound property. This shows that the Archimedean property does not imply the least-upper-bound axiom.
+
+First, the archimedean property was deduced by proving that $\mathbb{Z}^+$ was unbounded above. Also because $\mathbb{Q} \subset \mathbb{R}$ if $c \in \mathbb{Q}$ then we can apply **Theorem I.29** and **Theorem I.30** to $c$. Therefore any $c \in \mathbb{Q}$ satisfies the archimedean property.
+
+Second, if we apply the least-upper-bound axiom to $\mathbb{Q}$ we would have that every $S \subseteq \mathbb{Q} \land S \neq \emptyset$ which is bounded above has a supremum; that is, there is a rational number $B$ such that $B = \text{sup } S$.
+
+Third, let $S = \{s: s \in \mathbb{Q} \land s^2 < 2 \}$. We have that $S \subset \mathbb{Q}$ and $S \neq \emptyset$ because $0 \in \mathbb{Q}$ and $0^2 = 0 < 2$ so $0 \in S$.
+
+Fourth, by **Theorem 1.16** if $s \in S \subset \mathbb{Q} \subset \mathbb{R}$ we must have that $s = 0$, $s < 0$ or $s > 0$. If $s = 0$ or $s < 0$ then $s \leq 0 < 2$. If $s > 0$ then $s \geq 1$ or $1 > s > 0$. In the case of $s \geq 1$ we have that $s^2 \geq s$ by **Theorem 1.16** so $2 > s^2 \geq s$ and in the case of $1 > s > 0$ we have that $2 > 1 > s > 0$. Therefore in any case if $s \in S$ we have that $2 > s$ so $2$ is an upper bound of $S$.
+
+Fifth, now we assume that there is some $B \in \mathbb{Q}$ such that for all $s \in S$ we have that $s \leq B$. However by **Exercises I 3.12 6** there is some $r \in \mathbb{Q}$ such that $B < r < 2$ so $B$ is not a least upper bound of $S$. Therefore not every $S \subseteq \mathbb{Q} \land S \neq \emptyset$ which is bounded above has a supremum $B$ where $B \in \mathbb{Q}$.   
+
 ## Mathematical Induction, Summation Notation, and Related Topics
 
 ### Exercises I 4.4 {#exrI4.4}
@@ -1393,3 +1677,5 @@ Second, apart from $x \leq 0$ we also have that $x \geq 0$. Therefore because $(
 ### Exercises I 4.7 {#exrI4.7}
 
 ### Exercises I 4.9 {#exrI4.9}
+
+### Exercises I 4.10 {#exrI4.10}
